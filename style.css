@@ -1,0 +1,77 @@
+@keyframes inhibition{
+    0%{
+        opacity: 100%
+    }
+    50%{
+        opacity: 50%
+    }
+    100%{
+        opacity: 100%
+    }
+}
+
+@keyframes scaling{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.wrapper{display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; justify-items: center;}
+/*.i1{border: 1px green; border-radius: 3px; color: white; background-color: black; transition: transform 0.3s ease;}*/
+/*.i1:hover{transform: scale(1.05);}*/
+
+
+.card{
+    text-align: center;
+}
+
+.card.selected{
+    animation: inhibition 2s infinite;
+}
+
+#Next{
+    display: flex;
+    justify-content: center;
+}
+
+.Next{
+    margin: 10px 20px 30px;
+}
+
+.first_img{
+    width: 400px;
+    max-width: 400px;
+}
+
+body{
+    background-color: #342222;
+}
+
+.Down{
+    animation: scaling 1s infinite;
+    width: 150px;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.second{
+    display: flex;
+}
+
+.down {
+  background-image: url('z5VeI.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* или center, чтобы кнопка была по центру/внизу */
+  align-items: center;
+}
